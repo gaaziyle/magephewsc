@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+
     <style>
         * {
             margin: 0;
@@ -188,6 +192,22 @@
             text-align: center;
 
         }
+        footer {
+            background-color: #d4b75a;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+        footer p {
+            font-size: 20px;
+            font-family: 'Dosis', sans-serif;
+            color: black;
+            padding: 5px;
+
+
+        }
+
         ion-icon {
             margin-bottom: -8px;
         }
@@ -326,6 +346,7 @@
                 margin-top: 66rem;
             }
         }
+        
     </style>
 </head>
 <body>
@@ -359,6 +380,9 @@
     <p>Magephe WSC, where you can create your own sites, will be at your service very soon. Just wait</p>
     
 </div>
+<footer>
+    <p id="copy">&copy; Magephe WSC | Powered by Gazi</p>
+</footer>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -440,6 +464,11 @@
         });
         sr.reveal('.point11', {
             delay: 3300,
+        });
+        sr.reveal('footer', {
+            delay: 3300,
+            origin: 'bottom',
+            distance: "50px"
         });
     </script>
 </body>
